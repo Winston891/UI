@@ -1,0 +1,85 @@
+Inline Styles
+
+Embedded Styles
+
+External Style Sheet
+
+Inline Styles : 
+
+  --> Styles are defined for every element using "style" attribute
+  
+  --> Pros : Faster in Rendering
+  
+  --> Cons : Lack of Re-usability
+  
+  Example : <div style="attribute.value"></div>
+  
+Embedded Style :
+
+  --> Styles are defined by using <style> in head or body
+  
+  --> Pros : Re-usability
+  
+  --> Cons : Slower in Rendering
+  
+  Syntax : 
+  
+      <head>
+          <style>
+          </style>
+      </head>
+      
+  FAQ : What is the difference between mentioning <style> in <head> and <style> in <body> ? 
+  
+  Ans : <style> in <head> : Styles gets loaded to Browser Memory First and then applied to elements
+  
+        <style> in <body> : Styles gets loaded and Applied to Elements Directly
+        
+  FAQ : Can we define styles in both Sections?
+  
+  Ans : Yes
+  
+  Note : You can keep <style> out of <html> . It is Un-official but it is faster in speed.
+  
+  FAQ: What is MIME type for Styles?
+  
+  Ans : text/css
+  
+    Syntax : <style type="text/css"> </style>
+    
+  FAQ : What is the media type for styles?
+  
+  Ans : screen,print,speech
+  
+  Note : You can't access embedded styles from another page
+  
+External Style Sheets [Cascading Style Sheets]
+
+  --> Styles are maintained in a seperate StyleSheet
+  
+  --> Clean Seperation of markup and styles and Provides Re-usability across page
+  
+  --> External Stylesheet --> leads to more no.of.request for page
+  
+  --> More no.of.requests increases page load time will increase
+  
+  Steps
+  
+    1.Create a new Stylesheet
+    
+        effects.css
+        h1{
+          background-color:red;
+          color:white;
+          text-align:center;
+        }
+        
+    2.Link Stylesheet to any page
+    
+      <link rel="stylesheet" href = "../src/styles/effects.css" type="text/css">
+      
+   FAQ : What is Minification?
+   
+   Ans : 1.It is a technique used to reduce file size
+    
+         2.It is not a Zip or RAR File
