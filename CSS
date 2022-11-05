@@ -83,3 +83,9 @@ External Style Sheets [Cascading Style Sheets]
    Ans : 1.It is a technique used to reduce file size
     
          2.It is not a Zip or RAR File
+         
+   Note : Minified css file --> only in Production [style.min.css]
+      
+          css file --> only in development [style.css]
+         
+    
